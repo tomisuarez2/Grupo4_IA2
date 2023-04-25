@@ -1,0 +1,328 @@
+====================================================================================================
+---------------------------------------- Algoritmo genético ----------------------------------------
+====================================================================================================
+****************************************************************************************************
+------------------------------------------- Generacion 0 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 264
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 243
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 268
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 302
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 246
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 233
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 233
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 270
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 252
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 251
+[264, 243, 268, 302, 246, 233, 233, 270, 252, 251]
+(Seleccionando padres...)
+(Realizando cruces...)
+[264, 243, 268, 302, 246, 233, 233, 270, 252, 251]
+(Resultados)
+Generacion: 0
+Mejor individuo: ['P142', 'P89', 'P3', 'P13', 'P105', 'P43', 'P74', 'P127', 'P46', 'P48', 'P106', 'P60', 'P99', 'P38', 'P124', 'P1', 'P67', 'P107', 'P111', 'P73', 'P81', 'P52', 'P30', 'P117', 'P57', 'P64', 'P141', 'P115', 'P108', 'P66', 'P123', 'P10', 'P55', 'P135', 'P130', 'P118', 'P14', 'P35', 'P116', 'P119', 'P102', 'P26', 'P5', 'P77', 'P133', 'P32', 'P12', 'P37', 'P85', 'P17', 'P109', 'P29', 'P128', 'P121', 'P96', 'P34', 'P93', 'P49', 'P28', 'P6', 'P91', 'P51', 'P110', 'P58', 'P41', 'P90', 'P56', 'P20', 'P126', 'P54', 'P140', 'P31', 'P47', 'P53', 'P76', 'P27', 'P80', 'P72', 'P75', 'P132', 'P42', 'P114', 'P104', 'P125', 'P23', 'P78', 'P16', 'P25', 'P143', 'P62', 'P24', 'P22', 'P82', 'P120', 'P4', 'P50', 'P79', 'P15', 'P2', 'P40', 'P136', 'P11', 'P88', 'P83', 'P19', 'P44', 'P63', 'P7', 'P87', 'P139', 'P45', 'P134', 'P113', 'P122', 'P18', 'P137', 'P71', 'P21', 'P84', 'P69', 'P8', 'P98', 'P70', 'P92', 'P9', 'P95', 'P59', 'P36', 'P103', 'P138', 'P86', 'P100', 'P131', 'P61', 'P101', 'P129', 'P112', 'P65', 'P39', 'P97', 'P94', 'P68', 'P33', 'P144']
+Fitness: 302
+****************************************************************************************************
+------------------------------------------- Generacion 1 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 261
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 306
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 256
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 239
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 238
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 254
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 225
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 242
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 238
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 242
+[261, 306, 256, 239, 238, 254, 225, 242, 238, 242]
+(Seleccionando padres...)
+(Realizando cruces...)
+[261, 306, 256, 239, 238, 254, 225, 242, 238, 242]
+(Resultados)
+Generacion: 1
+Mejor individuo: ['P128', 'P13', 'P11', 'P39', 'P30', 'P81', 'P14', 'P5', 'P136', 'P6', 'P76', 'P63', 'P104', 'P115', 'P29', 'P89', 'P16', 'P83', 'P68', 'P139', 'P17', 'P123', 'P138', 'P108', 'P79', 'P129', 'P4', 'P24', 'P132', 'P117', 'P12', 'P51', 'P53', 'P134', 'P43', 'P142', 'P19', 'P93', 'P61', 'P46', 'P141', 'P57', 'P113', 'P133', 'P97', 'P64', 'P121', 'P131', 'P27', 'P110', 'P65', 'P67', 'P80', 'P88', 'P107', 'P112', 'P47', 'P55', 'P1', 'P42', 'P116', 'P73', 'P90', 'P143', 'P41', 'P127', 'P109', 'P62', 'P106', 'P50', 'P15', 'P70', 'P86', 'P95', 'P26', 'P92', 'P28', 'P120', 'P105', 'P77', 'P91', 'P69', 'P84', 'P82', 'P25', 'P114', 'P102', 'P66', 'P40', 'P8', 'P124', 'P22', 'P44', 'P60', 'P78', 'P2', 'P100', 'P96', 'P111', 'P130', 'P140', 'P9', 'P118', 'P98', 'P52', 'P119', 'P87', 'P7', 'P99', 'P33', 'P49', 'P94', 'P23', 'P36', 'P72', 'P125', 'P135', 'P18', 'P3', 'P10', 'P31', 'P58', 'P56', 'P126', 'P32', 'P137', 'P103', 'P122', 'P34', 'P75', 'P101', 'P85', 'P45', 'P21', 'P37', 'P35', 'P48', 'P38', 'P20', 'P144', 'P59', 'P74', 'P54', 'P71']
+Fitness: 306
+****************************************************************************************************
+------------------------------------------- Generacion 2 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 261
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 261
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 243
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 246
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 228
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 253
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 233
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 265
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 288
+[261, 261, 243, 246, 228, 253, 233, 265, 244, 288]
+(Seleccionando padres...)
+(Realizando cruces...)
+[261, 261, 243, 246, 228, 253, 233, 265, 244, 288]
+(Resultados)
+Generacion: 2
+Mejor individuo: ['P136', 'P6', 'P76', 'P104', 'P5', 'P85', 'P101', 'P31', 'P32', 'P115', 'P34', 'P63', 'P39', 'P58', 'P29', 'P89', 'P16', 'P83', 'P68', 'P139', 'P17', 'P123', 'P138', 'P108', 'P79', 'P129', 'P4', 'P24', 'P132', 'P117', 'P12', 'P51', 'P53', 'P134', 'P43', 'P142', 'P19', 'P93', 'P61', 'P46', 'P141', 'P57', 'P113', 'P133', 'P97', 'P64', 'P121', 'P131', 'P27', 'P110', 'P65', 'P67', 'P80', 'P88', 'P107', 'P112', 'P47', 'P55', 'P1', 'P42', 'P116', 'P73', 'P90', 'P143', 'P41', 'P127', 'P109', 'P62', 'P106', 'P50', 'P15', 'P70', 'P86', 'P95', 'P26', 'P92', 'P28', 'P120', 'P105', 'P77', 'P91', 'P69', 'P84', 'P82', 'P25', 'P114', 'P102', 'P66', 'P40', 'P8', 'P124', 'P22', 'P44', 'P60', 'P78', 'P2', 'P100', 'P96', 'P111', 'P130', 'P140', 'P9', 'P118', 'P98', 'P52', 'P119', 'P87', 'P7', 'P99', 'P33', 'P49', 'P94', 'P23', 'P36', 'P72', 'P125', 'P135', 'P18', 'P3', 'P10', 'P56', 'P126', 'P137', 'P103', 'P122', 'P75', 'P45', 'P21', 'P37', 'P35', 'P48', 'P38', 'P20', 'P144', 'P59', 'P74', 'P54', 'P71', 'P128', 'P13', 'P11', 'P30', 'P81', 'P14']
+Fitness: 288
+****************************************************************************************************
+------------------------------------------- Generacion 3 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 271
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 260
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 233
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 265
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 257
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 248
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 268
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 243
+[271, 260, 233, 244, 265, 257, 248, 268, 244, 243]
+(Seleccionando padres...)
+(Realizando cruces...)
+[271, 260, 233, 244, 265, 257, 248, 268, 244, 243]
+(Resultados)
+Generacion: 3
+Mejor individuo: ['P89', 'P98', 'P51', 'P24', 'P81', 'P12', 'P129', 'P139', 'P15', 'P59', 'P141', 'P57', 'P113', 'P133', 'P97', 'P64', 'P121', 'P131', 'P27', 'P110', 'P67', 'P80', 'P93', 'P65', 'P88', 'P107', 'P112', 'P55', 'P1', 'P42', 'P116', 'P73', 'P90', 'P41', 'P127', 'P109', 'P62', 'P106', 'P50', 'P70', 'P86', 'P95', 'P26', 'P92', 'P28', 'P120', 'P105', 'P77', 'P91', 'P69', 'P124', 'P84', 'P82', 'P114', 'P111', 'P130', 'P140', 'P9', 'P52', 'P119', 'P7', 'P99', 'P33', 'P66', 'P49', 'P94', 'P36', 'P72', 'P125', 'P135', 'P18', 'P3', 'P10', 'P56', 'P126', 'P137', 'P103', 'P122', 'P75', 'P78', 'P96', 'P45', 'P21', 'P37', 'P35', 'P48', 'P38', 'P20', 'P144', 'P34', 'P43', 'P19', 'P87', 'P128', 'P101', 'P74', 'P29', 'P68', 'P25', 'P134', 'P83', 'P11', 'P76', 'P136', 'P118', 'P14', 'P79', 'P13', 'P132', 'P138', 'P17', 'P123', 'P6', 'P54', 'P39', 'P31', 'P60', 'P58', 'P117', 'P53', 'P85', 'P61', 'P71', 'P47', 'P4', 'P102', 'P40', 'P8', 'P22', 'P44', 'P2', 'P100', 'P104', 'P142', 'P108', 'P63', 'P30', 'P46', 'P32', 'P16', 'P115', 'P5', 'P143', 'P23']
+Fitness: 271
+****************************************************************************************************
+------------------------------------------- Generacion 4 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 279
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 257
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 257
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 225
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 277
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 242
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 249
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 243
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 290
+[279, 244, 257, 257, 225, 277, 242, 249, 243, 290]
+(Seleccionando padres...)
+(Realizando cruces...)
+[279, 244, 257, 257, 225, 277, 242, 249, 243, 290]
+(Resultados)
+Generacion: 4
+Mejor individuo: ['P127', 'P109', 'P62', 'P50', 'P86', 'P92', 'P28', 'P120', 'P105', 'P91', 'P82', 'P94', 'P36', 'P18', 'P8', 'P124', 'P22', 'P44', 'P10', 'P78', 'P100', 'P96', 'P32', 'P104', 'P112', 'P107', 'P103', 'P130', 'P135', 'P3', 'P142', 'P108', 'P119', 'P63', 'P30', 'P45', 'P46', 'P111', 'P16', 'P115', 'P106', 'P5', 'P143', 'P23', 'P52', 'P89', 'P98', 'P51', 'P125', 'P42', 'P95', 'P70', 'P21', 'P24', 'P49', 'P38', 'P81', 'P12', 'P77', 'P129', 'P139', 'P26', 'P15', 'P59', 'P114', 'P72', 'P1', 'P33', 'P7', 'P141', 'P57', 'P113', 'P133', 'P97', 'P64', 'P121', 'P131', 'P27', 'P69', 'P2', 'P110', 'P65', 'P67', 'P80', 'P93', 'P144', 'P34', 'P43', 'P19', 'P87', 'P128', 'P101', 'P74', 'P29', 'P84', 'P140', 'P35', 'P68', 'P20', 'P25', 'P99', 'P134', 'P83', 'P11', 'P76', 'P136', 'P118', 'P37', 'P14', 'P56', 'P137', 'P75', 'P54', 'P71', 'P13', 'P6', 'P85', 'P31', 'P40', 'P47', 'P58', 'P39', 'P102', 'P66', 'P126', 'P9', 'P117', 'P48', 'P132', 'P61', 'P79', 'P122', 'P138', 'P55', 'P88', 'P17', 'P41', 'P60', 'P123', 'P4', 'P53', 'P116', 'P73', 'P90']
+Fitness: 290
+****************************************************************************************************
+------------------------------------------- Generacion 5 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 246
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 260
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 242
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 242
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 223
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 239
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 247
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 236
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 227
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 244
+[246, 260, 242, 242, 223, 239, 247, 236, 227, 244]
+(Seleccionando padres...)
+(Realizando cruces...)
+[246, 260, 242, 242, 223, 239, 247, 236, 227, 244]
+(Resultados)
+Generacion: 5
+Mejor individuo: ['P126', 'P122', 'P96', 'P45', 'P37', 'P35', 'P48', 'P38', 'P20', 'P25', 'P134', 'P83', 'P11', 'P76', 'P118', 'P79', 'P55', 'P132', 'P138', 'P88', 'P73', 'P17', 'P41', 'P123', 'P62', 'P39', 'P31', 'P60', 'P58', 'P90', 'P109', 'P127', 'P117', 'P86', 'P50', 'P53', 'P95', 'P92', 'P28', 'P120', 'P105', 'P77', 'P91', 'P82', 'P130', 'P52', 'P119', 'P12', 'P36', 'P135', 'P18', 'P3', 'P56', 'P137', 'P103', 'P75', 'P78', 'P21', 'P54', 'P71', 'P13', 'P100', 'P30', 'P14', 'P136', 'P6', 'P104', 'P29', 'P108', 'P85', 'P61', 'P116', 'P47', 'P4', 'P102', 'P40', 'P8', 'P22', 'P44', 'P112', 'P107', 'P142', 'P63', 'P46', 'P32', 'P16', 'P115', 'P70', 'P5', 'P143', 'P23', 'P89', 'P98', 'P51', 'P42', 'P106', 'P24', 'P81', 'P129', 'P139', 'P26', 'P15', 'P59', 'P1', 'P141', 'P57', 'P113', 'P133', 'P97', 'P64', 'P121', 'P131', 'P27', 'P2', 'P110', 'P65', 'P67', 'P80', 'P93', 'P144', 'P34', 'P43', 'P19', 'P87', 'P128', 'P101', 'P74', 'P68', 'P69', 'P124', 'P84', 'P114', 'P111', 'P140', 'P9', 'P7', 'P99', 'P33', 'P66', 'P49', 'P94', 'P72', 'P125', 'P10']
+Fitness: 260
+****************************************************************************************************
+------------------------------------------- Generacion 6 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 239
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 258
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 224
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 248
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 249
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 249
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 254
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 256
+[239, 258, 224, 248, 249, 249, 244, 244, 254, 256]
+(Seleccionando padres...)
+(Realizando cruces...)
+[239, 258, 224, 248, 249, 249, 244, 244, 254, 256]
+(Resultados)
+Generacion: 6
+Mejor individuo: ['P75', 'P122', 'P10', 'P96', 'P37', 'P35', 'P48', 'P38', 'P20', 'P25', 'P134', 'P83', 'P11', 'P76', 'P136', 'P118', 'P14', 'P79', 'P13', 'P55', 'P132', 'P138', 'P88', 'P73', 'P17', 'P41', 'P92', 'P123', 'P6', 'P28', 'P62', 'P54', 'P39', 'P31', 'P60', 'P58', 'P90', 'P109', 'P127', 'P117', 'P86', 'P50', 'P53', 'P85', 'P61', 'P71', 'P116', 'P47', 'P4', 'P102', 'P40', 'P8', 'P22', 'P44', 'P100', 'P104', 'P112', 'P103', 'P3', 'P142', 'P108', 'P63', 'P30', 'P45', 'P46', 'P32', 'P115', 'P106', 'P143', 'P52', 'P89', 'P98', 'P130', 'P16', 'P27', 'P105', 'P19', 'P56', 'P5', 'P66', 'P23', 'P107', 'P141', 'P78', 'P72', 'P26', 'P15', 'P59', 'P135', 'P119', 'P95', 'P82', 'P133', 'P70', 'P51', 'P125', 'P42', 'P21', 'P24', 'P49', 'P81', 'P12', 'P77', 'P129', 'P139', 'P1', 'P33', 'P57', 'P113', 'P97', 'P64', 'P121', 'P131', 'P2', 'P110', 'P65', 'P67', 'P80', 'P93', 'P144', 'P34', 'P43', 'P29', 'P87', 'P128', 'P101', 'P74', 'P68', 'P69', 'P124', 'P84', 'P114', 'P111', 'P140', 'P9', 'P7', 'P99', 'P126', 'P36', 'P91', 'P18', 'P120', 'P137', 'P94']
+Fitness: 258
+****************************************************************************************************
+------------------------------------------- Generacion 7 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 249
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 258
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 231
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 225
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 256
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 251
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 271
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 243
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 224
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 251
+[249, 258, 231, 225, 256, 251, 271, 243, 224, 251]
+(Seleccionando padres...)
+(Realizando cruces...)
+[249, 258, 231, 225, 256, 251, 271, 243, 224, 251]
+(Resultados)
+Generacion: 7
+Mejor individuo: ['P109', 'P127', 'P117', 'P86', 'P50', 'P53', 'P85', 'P61', 'P71', 'P116', 'P47', 'P4', 'P102', 'P40', 'P44', 'P100', 'P103', 'P3', 'P142', 'P63', 'P45', 'P46', 'P32', 'P115', 'P106', 'P143', 'P52', 'P89', 'P98', 'P130', 'P105', 'P56', 'P5', 'P66', 'P23', 'P107', 'P78', 'P135', 'P119', 'P95', 'P82', 'P70', 'P9', 'P51', 'P125', 'P21', 'P12', 'P77', 'P84', 'P140', 'P99', 'P126', 'P36', 'P91', 'P18', 'P120', 'P137', 'P94', 'P75', 'P122', 'P37', 'P35', 'P48', 'P20', 'P25', 'P134', 'P83', 'P11', 'P8', 'P124', 'P22', 'P10', 'P96', 'P111', 'P112', 'P118', 'P24', 'P49', 'P38', 'P81', 'P129', 'P139', 'P26', 'P15', 'P59', 'P114', 'P72', 'P1', 'P33', 'P7', 'P141', 'P62', 'P113', 'P133', 'P97', 'P64', 'P121', 'P131', 'P27', 'P69', 'P2', 'P110', 'P65', 'P67', 'P80', 'P93', 'P144', 'P34', 'P43', 'P19', 'P87', 'P128', 'P101', 'P74', 'P29', 'P136', 'P68', 'P6', 'P108', 'P30', 'P42', 'P16', 'P13', 'P104', 'P76', 'P14', 'P79', 'P55', 'P132', 'P138', 'P88', 'P73', 'P17', 'P41', 'P92', 'P123', 'P28', 'P57', 'P54', 'P39', 'P31', 'P60', 'P58', 'P90']
+Fitness: 271
+****************************************************************************************************
+------------------------------------------- Generacion 8 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 262
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 241
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 272
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 238
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 240
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 268
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 236
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 254
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 277
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 262
+[262, 241, 272, 238, 240, 268, 236, 254, 277, 262]
+(Seleccionando padres...)
+(Realizando cruces...)
+[262, 241, 272, 238, 240, 268, 236, 254, 277, 262]
+(Resultados)
+Generacion: 8
+Mejor individuo: ['P98', 'P108', 'P30', 'P16', 'P104', 'P5', 'P102', 'P66', 'P23', 'P107', 'P44', 'P100', 'P40', 'P46', 'P89', 'P63', 'P142', 'P45', 'P143', 'P106', 'P115', 'P32', 'P15', 'P59', 'P135', 'P119', 'P95', 'P82', 'P133', 'P70', 'P87', 'P9', 'P51', 'P125', 'P42', 'P21', 'P24', 'P49', 'P81', 'P12', 'P77', 'P129', 'P139', 'P114', 'P1', 'P33', 'P57', 'P113', 'P97', 'P64', 'P121', 'P131', 'P69', 'P2', 'P110', 'P65', 'P67', 'P80', 'P93', 'P144', 'P34', 'P43', 'P128', 'P101', 'P74', 'P29', 'P84', 'P140', 'P68', 'P99', 'P126', 'P36', 'P91', 'P18', 'P120', 'P137', 'P94', 'P75', 'P122', 'P124', 'P10', 'P96', 'P111', 'P37', 'P35', 'P48', 'P38', 'P20', 'P25', 'P134', 'P83', 'P11', 'P76', 'P136', 'P118', 'P14', 'P79', 'P13', 'P55', 'P132', 'P138', 'P88', 'P73', 'P17', 'P41', 'P92', 'P123', 'P6', 'P28', 'P62', 'P54', 'P39', 'P31', 'P60', 'P58', 'P90', 'P109', 'P127', 'P117', 'P86', 'P50', 'P53', 'P85', 'P61', 'P71', 'P116', 'P47', 'P4', 'P8', 'P22', 'P112', 'P26', 'P72', 'P7', 'P141', 'P27', 'P19', 'P105', 'P130', 'P52', 'P3', 'P56', 'P103', 'P78']
+Fitness: 277
+****************************************************************************************************
+------------------------------------------- Generacion 9 -------------------------------------------
+****************************************************************************************************
+(Calculando fitness...)
+Calculo fitness individuo 1 listo.
+Fitness del individuo: 238
+Calculo fitness individuo 2 listo.
+Fitness del individuo: 244
+Calculo fitness individuo 3 listo.
+Fitness del individuo: 247
+Calculo fitness individuo 4 listo.
+Fitness del individuo: 265
+Calculo fitness individuo 5 listo.
+Fitness del individuo: 280
+Calculo fitness individuo 6 listo.
+Fitness del individuo: 265
+Calculo fitness individuo 7 listo.
+Fitness del individuo: 238
+Calculo fitness individuo 8 listo.
+Fitness del individuo: 238
+Calculo fitness individuo 9 listo.
+Fitness del individuo: 249
+Calculo fitness individuo 10 listo.
+Fitness del individuo: 254
+[238, 244, 247, 265, 280, 265, 238, 238, 249, 254]
+(Seleccionando padres...)
+(Realizando cruces...)
+[238, 244, 247, 265, 280, 265, 238, 238, 249, 254]
+(Resultados)
+Generacion: 9
+Mejor individuo: ['P106', 'P115', 'P32', 'P94', 'P85', 'P61', 'P75', 'P71', 'P116', 'P122', 'P47', 'P4', 'P8', 'P124', 'P22', 'P10', 'P96', 'P111', 'P112', 'P103', 'P3', 'P118', 'P38', 'P59', 'P135', 'P119', 'P95', 'P82', 'P133', 'P70', 'P87', 'P9', 'P51', 'P125', 'P42', 'P21', 'P24', 'P49', 'P81', 'P12', 'P77', 'P129', 'P139', 'P26', 'P15', 'P114', 'P72', 'P1', 'P33', 'P7', 'P141', 'P57', 'P113', 'P97', 'P64', 'P121', 'P131', 'P27', 'P2', 'P110', 'P65', 'P67', 'P80', 'P93', 'P144', 'P34', 'P43', 'P19', 'P128', 'P101', 'P74', 'P68', 'P69', 'P29', 'P84', 'P140', 'P99', 'P126', 'P36', 'P91', 'P18', 'P120', 'P137', 'P37', 'P35', 'P48', 'P20', 'P25', 'P134', 'P83', 'P11', 'P76', 'P136', 'P14', 'P79', 'P13', 'P55', 'P132', 'P138', 'P88', 'P73', 'P17', 'P41', 'P92', 'P123', 'P6', 'P28', 'P62', 'P54', 'P39', 'P31', 'P60', 'P58', 'P90', 'P109', 'P127', 'P117', 'P86', 'P50', 'P53', 'P105', 'P130', 'P52', 'P56', 'P78', 'P98', 'P108', 'P30', 'P16', 'P104', 'P5', 'P102', 'P66', 'P23', 'P107', 'P44', 'P100', 'P40', 'P46', 'P89', 'P63', 'P142', 'P45', 'P143']
+Fitness: 280
+====================================================================================================
+------------------------------------ Mejor individuo historico -------------------------------------
+====================================================================================================
+Mejor individuo historico: ['P111', 'P105', 'P25', 'P69', 'P115', 'P18', 'P28', 'P104', 'P17', 'P72', 'P12', 'P113', 'P63', 'P136', 'P114', 'P27', 'P138', 'P48', 'P53', 'P65', 'P55', 'P127', 'P84', 'P100', 'P99', 'P6', 'P135', 'P8', 'P50', 'P42', 'P71', 'P130', 'P142', 'P143', 'P75', 'P43', 'P62', 'P106', 'P89', 'P10', 'P95', 'P46', 'P23', 'P87', 'P134', 'P54', 'P49', 'P70', 'P1', 'P21', 'P3', 'P101', 'P11', 'P81', 'P26', 'P98', 'P40', 'P77', 'P64', 'P45', 'P118', 'P120', 'P15', 'P20', 'P16', 'P34', 'P58', 'P52', 'P88', 'P117', 'P41', 'P31', 'P33', 'P109', 'P78', 'P86', 'P94', 'P32', 'P68', 'P93', 'P4', 'P141', 'P61', 'P22', 'P108', 'P79', 'P121', 'P116', 'P107', 'P129', 'P38', 'P102', 'P13', 'P133', 'P112', 'P57', 'P19', 'P39', 'P74', 'P44', 'P66', 'P59', 'P80', 'P122', 'P37', 'P91', 'P2', 'P35', 'P126', 'P125', 'P73', 'P5', 'P90', 'P119', 'P30', 'P103', 'P92', 'P24', 'P82', 'P131', 'P132', 'P123', 'P51', 'P144', 'P85', 'P7', 'P47', 'P96', 'P139', 'P140', 'P67', 'P14', 'P29', 'P97', 'P110', 'P124', 'P36', 'P76', 'P60', 'P9', 'P137', 'P83', 'P128', 'P56']
+Fitness: 306
