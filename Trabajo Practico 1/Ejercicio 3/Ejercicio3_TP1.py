@@ -3,6 +3,42 @@ import numpy as np
 from lectura_datos import  posiciones_originales, lectura_de_ordenes, leer_distancias # Funciones para leer los datos.
 from temple_modificado import temple_simulado # Función de temple simulado.
 
+#----------------------------------------------------------------
+# Función para imprimir la ubicación de los estantes del almacen.
+#----------------------------------------------------------------
+
+def imprimir_configuracion(configuracion):
+    forma = ""
+    cf = 0 # Contador de filas
+    for i in range(0, len(configuracion), 12):
+        cf += 1
+        fila = configuracion[i:i+12]
+        fila_str = ""
+        for j in range(0, len(fila), 2):
+            subfila = fila[j:j+2]
+            subfila_str = ""
+            if len(subfila[0]) == 2:
+                subfila_str = "   ".join([str(x) for x in subfila])
+            elif len(subfila[0]) == 3:
+                subfila_str = "  ".join([str(x) for x in subfila])
+            elif len(subfila[0]) == 4:
+                subfila_str = " ".join([str(x) for x in subfila])
+            if len(subfila_str) == 5:
+                fila_str += f"{subfila_str}        "
+            elif len(subfila_str) == 6:
+                fila_str += f"{subfila_str}       "
+            elif len(subfila_str) == 7:
+                fila_str += f"{subfila_str}      "
+            elif len(subfila_str) == 8:
+                fila_str += f"{subfila_str}     "
+            elif len(subfila_str) == 9:
+                fila_str += f"{subfila_str}    "
+        forma += f"{fila_str}\n"
+        if cf == 4:
+            forma += f"\n\n"
+            cf = 0
+    return forma
+
 #--------------------
 # Función de fitness.
 #--------------------
@@ -236,7 +272,6 @@ for generacion in range(GENERACIONES):
         cruces.append(hijo1)
         cruces.append(hijo2)
     # Mejor individuo de la población.
-    fitness_population = [ -f for f in lista_fitness]
     mejor_individuo = poblacion[0]
     fitness_mejor = lista_fitness[0]
     for i in range(len(poblacion)):
@@ -251,7 +286,9 @@ for generacion in range(GENERACIONES):
     # Imprimimos el mejor individuo de la generación
     print('(Resultados)')
     print("Generacion:", generacion) 
-    print("Mejor individuo:", mejor_individuo)
+    #print("Mejor individuo:", mejor_individuo)
+    print("Mejor individuo:\n")
+    print(imprimir_configuracion(mejor_individuo))
     print("Fitness:", (-1)*fitness_mejor)
     # Actualizamos la población a los hijos.
     poblacion.clear() # Vaciamos la lista población.
@@ -267,5 +304,6 @@ for generacion in range(GENERACIONES):
 print('='*100)
 print('-'*36,'Mejor individuo historico','-'*37)
 print('='*100)
-print("Mejor individuo historico:", mejor_individuo_historico)
+print("Mejor individuo historico:\n")
+print(imprimir_configuracion(mejor_individuo_historico))
 print("Fitness:", (-1)*mejor_fitness_historico)

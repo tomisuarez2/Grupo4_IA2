@@ -137,7 +137,9 @@ def temple_simulado(distancias, orden_inicial, temperatura_inicial, enfriamiento
 #------------------
 
 ordenes_, distancias_ = lectura_de_datos()
-numero_iteraciones, historial, orden_mejor, numero_casillas_mejor = temple_simulado(distancias_, ordenes_[6], 6, 0.00001, 1)
+tamano_orden = 10
+orden = ordenes_[6][:(tamano_orden-1)]
+numero_iteraciones, historial, orden_mejor, numero_casillas_mejor = temple_simulado(distancias_, orden, 5, 0.001, 1)
 print('='*100)
 print('La orden mas eficiente es: ')
 print(orden_mejor)
