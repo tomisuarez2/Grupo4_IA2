@@ -1,6 +1,7 @@
 import numpy as np
+import matplotlib.pyplot as plt # Solo para corroboración.
 
-def controlador_difuso(pert_posicion, pert_velocidad, fcn_pert_frza, rango_conj_frza, dom_frzas, reglas):
+def controlador_difuso(pert_posicion, pert_velocidad, fcn_pert_frza, rango_conj_frza, rango_total_fuerza, reglas, dom_frzas):
 
     valores_minimos = [] # Lista para almacenar los valores cada antecedente.
     consecuentes = [] # Lista para guardar todos los consecuentes a tener en cuenta.
@@ -74,25 +75,30 @@ def controlador_difuso(pert_posicion, pert_velocidad, fcn_pert_frza, rango_conj_
     # Hacemos ombinación de conjuntos borrosos de salida mediante t-conorma max().
 
     conjunto_salida = [] # Conjunto de sálidas.
-    rango_total = np.arange(-8.0, 9.0, 0.1) # Es porque el rango de la fuerza va de -8 a 8, con un incremento de 0.1.
-
+    
     # Uno todos las funciones de pertenencia en un solo conjunto de salida, cuando hay superposición elijo el mayor valor.
-    for x in rango_total:
-        x = round(x,1) # Redondeo para evitar errores númericos.
+    for x in rango_total_fuerza:
         if (x in rango_conj_frza['NP']) and (x not in rango_conj_frza['Z']):
-            conjunto_salida.append([x,dic_NP[x]])
+            conjunto_salida.append(dic_NP[x])
         elif (x in rango_conj_frza['NP']) and (x in rango_conj_frza['Z']):
-            conjunto_salida.append([x,max(dic_NP[x],dic_Z[x])])
+            conjunto_salida.append(max(dic_NP[x],dic_Z[x]))
         elif (x in rango_conj_frza['Z']) and (x in rango_conj_frza['PP']):
-            conjunto_salida.append([x,max(dic_Z[x],dic_PP[x])])
+            conjunto_salida.append(max(dic_Z[x],dic_PP[x]))
         elif (x in rango_conj_frza['PP']) and (x not in rango_conj_frza['Z']):
-            conjunto_salida.append([x,dic_PP[x]])
+            conjunto_salida.append(dic_PP[x])
+
+    #plt.figure()
+    #plt.plot(rango_total_fuerza, conjunto_salida)
+    #plt.grid(True)
+    #plt.show()
+    
 
     #--------------------
     # Desborrosificación.
     #--------------------
 
     f_nitido = desborrosificador_media_centros(dom_frzas, valor_NP, valor_Z, valor_PP)     
+    #f_nitido = desborrrosificador_por_centroide(conjunto_salida,rango_total_fuerza)
 
     return f_nitido
 
@@ -141,7 +147,7 @@ def truncacion(vector1, valor_min):
 #----------------------------------------
 
 def desborrosificador_media_centros(dominio_conj_fuerza, valorNP, valorZ, valorPP): 
-    
+
     # Tomo el valor del centro de cada conjunto borroso y lo multiplico por su grado de pertenencia. 
     # El denominador va a ser la suma de los grados de pertenencia de todos los conjuntos borrosos.
     # Podría suceder que no tengamos valores de pertencia ya que no se encontaron reglas a aplicar, es decir, 
@@ -158,6 +164,21 @@ def desborrosificador_media_centros(dominio_conj_fuerza, valorNP, valorZ, valorP
         return numerador/denominador
     else:
         return 0
+    
+
+#---------------------------------
+# Desborrosificador por centroide.
+#---------------------------------
+
+def desborrrosificador_por_centroide(conj_sal, ran_tot_fza):
+    if sum(conj_sal) == 0:
+        return 0
+    else:
+        fuerza = 0
+        for i in range(len(conj_sal)):
+            fuerza = fuerza + conj_sal[i]*ran_tot_fza[i]
+        fuerza = fuerza/sum(conj_sal)
+        return fuerza
 
 
 #----------------------------------------------------

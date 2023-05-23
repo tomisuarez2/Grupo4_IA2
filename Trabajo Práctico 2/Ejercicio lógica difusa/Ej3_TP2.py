@@ -16,8 +16,8 @@ reglas = {"NP":{"NP":"NP","Z":"NP","PP":"Z"},  # Reglas aplicadas a modo de dicc
 # Defino posición y velocidad iniciales.
 #=======================================
 
-posicion_inicial = 2.5*pi/180 
-velocidad_inicial = 0
+posicion_inicial = -5*pi/180
+velocidad_inicial = -8*pi/180
 fuerza_inicial = 0
 aceleracion_inicial = calculo_aceleracion(posicion_inicial, velocidad_inicial, fuerza_inicial)
 dt = 0.001 # Incremento de tiempo.
@@ -68,7 +68,7 @@ while flag == 1:
     # Motor de inferencia y desfusicación.
     #-------------------------------------
 
-    fuerza = controlador_difuso(pert_posicion, pert_velocidad, funcion_pertencia_fuerza, rango_conjunto_fuerza, dom_frzas, reglas)
+    fuerza = controlador_difuso(pert_posicion, pert_velocidad, funcion_pertencia_fuerza, rango_conjunto_fuerza, rango_total_fuerza, reglas, dom_frzas)
 
     #-----------------------------
     # Actualización de magnitudes.
@@ -103,33 +103,42 @@ while flag == 1:
 # Estadísticas del control.
 #==========================
 
-print("Se llego al equilibrio en el instante: ", num_iter*dt)
+print("Se llego al equilibrio en el instante: ", tiempo[-1])
+
+#==========================
+# Escalamos los resultados.
+#==========================
+
+historia_posicion_grad = [elemento * 180/pi for elemento in historia_posicion]
+historia_velocidad_grad = [elemento * 180/pi for elemento in historia_velocidad]
+historia_aceleracion_grad = [elemento * 180/pi for elemento in historia_aceleracion]
 
 #=======================
 # Ploteo de resultados.
 #=======================
 
+historia_posicion_grad = [elemento * 180/pi for elemento in historia_posicion]
 plt.figure(1)
-plt.plot(tiempo, historia_posicion)
+plt.plot(tiempo, historia_posicion_grad)
 plt.grid(True)
 plt.xlabel('Tiempo [s]')
-plt.ylabel('Posición angular [rad]')
+plt.ylabel('Posición angular [°]')
 plt.title('Gráfica de la posición angular vs tiempo')
 plt.show()
 
 plt.figure(2)
-plt.plot(tiempo, historia_velocidad)
+plt.plot(tiempo, historia_velocidad_grad)
 plt.grid(True)
 plt.xlabel('Tiempo [s]')
-plt.ylabel('Velocidad angular [rad/s]')
+plt.ylabel('Velocidad angular [°/s]')
 plt.title('Gráfica de la velocidad angular vs tiempo')
 plt.show()
 
 plt.figure(3)
-plt.plot(tiempo, historia_aceleracion)
+plt.plot(tiempo, historia_aceleracion_grad)
 plt.grid(True)
 plt.xlabel('Tiempo [s]')
-plt.ylabel('Aceleración angular [rad/s^2]')
+plt.ylabel('Aceleración angular [°/s^2]')
 plt.title('Gráfica de la aceleración angular vs tiempo')
 plt.show()
 

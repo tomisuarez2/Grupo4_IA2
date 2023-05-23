@@ -9,7 +9,7 @@ def borrosificador(entrada, dominio): # Busco que valor de pertenencia le corres
     terminos = ["NP","Z","PP"] # Conjuntos borrosos para cada variable de entrada.
     pertenencias = {} # Diccionario para guardar los valores de pertenencia a cada conjunto de la entrada.
 
-    if (entrada < dominio[-1][1]) and (entrada > dominio[0][0]): # Analizo si la entrada esta dentro del dominio.
+    if (entrada <= dominio[-1][1]) and (entrada >= dominio[0][0]): # Analizo si la entrada esta dentro del dominio.
         for j in range(len(dominio)): # Itero para cada conjunto borroso.
             ancho = dominio[j][1] - dominio[j][0]
             centro = dominio[j][0] + ancho/2
