@@ -60,7 +60,7 @@ pesos_iniciales = inicializar_pesos(n_entrada=entrada, n_capa_2=NEURONAS_CAPA_OC
 
 # Entrena.
 LEARNING_RATE = 0.5
-EPOCHS = 500
+EPOCHS = 1000
 N = 50 # Cada cuantos epochs realizamos la verificación con el set de validación.
 tolerancia_validacion = 1
 pesos_entrenados, loss_de_entrenamiento = train(x_training, t_training, x_validacion, t_validacion, pesos_iniciales, LEARNING_RATE, EPOCHS, N, tolerancia_validacion, funcion)

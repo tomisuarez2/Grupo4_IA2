@@ -58,8 +58,8 @@ set_de_datos = 'set_regresion_lineal_n_1.npz'
 
 # Definimos los valores de los hiperparámetros a evaluar.
 
-learning_rates = [0.01,0.02,0.05,0.075,0.1,0.2,0.5,0.75,1]
-neuronas_capa_oculta = [10,30,60,100,150,200]
+learning_rates = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
+neuronas_capa_oculta = [10,60,110,160,210,260,310,360,410,460,510]
 funcion_de_activacion = ["ReLU","Sigmoide"]
 
 combinaciones_posibles, num_comb = obtener_combinaciones(learning_rates,neuronas_capa_oculta,funcion_de_activacion)
@@ -73,19 +73,22 @@ mejor_configuracion = np.zeros([1,3]) # Array de numpy para guardar la mejor con
 print('='*63)
 print('-'*20,'Barrido de parametros','-'*20)
 print('='*63)
-
-for _ in range(num_comb):
+vector_rmse = np.zeros([num_comb,1]) # Vector para guardar los rmse de cada configuracion.
+vector_combinaciones ={} # Vector para guardar las configuraciones.
+for j in range(num_comb):
 
     # Tomo una combinacion aleatoria y la elimino de las posibilidades.
     combinacion, combinaciones_posibles = eliminar_fila_aleatoria(combinaciones_posibles)
-
+    vector_combinaciones[j] = combinacion[:]
     # Printeamos la combinación.
-    print('-'*63)
-    print('Learning Rate:',combinacion[0],'||','Capa oculta:',combinacion[1],'||','Activacion:',combinacion[2])
+    #print('-'*63)
+    #print('Learning Rate:',combinacion[0],'||','Capa oculta:',combinacion[1],'||','Activacion:',combinacion[2])
     rmse_configuracion = iniciar(set_de_datos,int(combinacion[1]),float(combinacion[0]),str(combinacion[2]))
-    print('RMSE:', rmse_configuracion)
-    print('-'*63)
-
+    vector_rmse[j] = rmse_configuracion
+    #print('RMSE:', rmse_configuracion)
+    #print('-'*63)
+print("minimo",np.min(vector_rmse))
+print("Valores correspondientes", vector_combinaciones[np.argmin(vector_rmse)]) #argmin() devuelve el indice del minimo valor del vector.
 print('='*63)
 
 
